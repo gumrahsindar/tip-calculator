@@ -4,10 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <h1>This is a simple HTML + CSS template!</h1>
+    <header>
+      <img  src="./public/images/logo.svg" alt="">
+    </header>
+    <main class='main-container'>
+      <section class="calc-section">
+        <div class="billing-container">
+          <h1>Bill</h1>
+          <input type="number" placeholder='0'>
+        </div>
+        <div class="tip-container">
+          <h2>Select Tip %</h2>
+          <div class="percentages">
+            <input type="radio" name="tip-percentage" id="five-percent" value='5'>
+            <label for="five-percent">5%</label>
+            <input type="radio" name="tip-percentage" id="ten-percent" value='10'>
+            <label for="ten-percent">10%</label>
+            <input type="radio" name="tip-percentage" id="fifteen-percent" value='15'>
+            <label for="fifteen-percent">15%</label>
+            <input type="radio" name="tip-percentage" id="twentyfive-percent" value='25'>
+            <label for="twentyfive-percent">25%</label>
+            <input type="radio" name="tip-percentage" id="fifty-percent" value='50'>
+            <label for="fifty-percent">50%</label>
+            <input type="number" name="tip-percentage-custom" id="custom-percent">
+            <label for="custom-percent">Custom</label>
+          </div>
+        </div>
+        <div class="people-container">
+          <h3>Number Of People</h3>
+          <input type="number" placeholder='0'>
+        </div>
+      </section>
+      <section class="result-section">
+        <div class="amount-container">
+          <div class='amount-details'>
+            <div class='amount-tip'>
+              <div>
+                <h4>Tip Amount</h4>
+                <p>/ person</p>
+              </div>
+              <p>$4.27</p>
+            </div>
+            <div class='amount-total'>
+              <div>
+                <h4>Total</h4>
+                <p>/ person</p>
+              </div>
+              <p>$32.79</p>
+            </div>
+          </div>
+          <button class="reset-btn">Reset</button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
