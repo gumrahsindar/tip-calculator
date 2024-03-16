@@ -18,28 +18,36 @@
       <section class="calc-section">
         <div class="billing-container">
           <h1>Bill</h1>
-          <input type="number" placeholder='0'>
+          <div class="number-input">
+            <input type="number" id='bill-input' placeholder='0'>
+            <label for="bill-input" style='display: none'>Bill input</label>
+            <img src="./public/images/icon-dollar.svg" alt="dollar icon">
+          </div>
         </div>
         <div class="tip-container">
           <h2>Select Tip %</h2>
-          <div class="percentages">
-            <input type="radio" name="tip-percentage" id="five-percent" value='5'>
+          <div class="percentages" aria-label='pick a tip percentage'>
+            <input type="radio" name="tip-percentage" id="five-percent" value='5' tabindex='1'>
             <label for="five-percent">5%</label>
-            <input type="radio" name="tip-percentage" id="ten-percent" value='10'>
+            <input type="radio" name="tip-percentage" id="ten-percent" value='10' tabindex='2'>
             <label for="ten-percent">10%</label>
-            <input type="radio" name="tip-percentage" id="fifteen-percent" value='15'>
+            <input type="radio" name="tip-percentage" id="fifteen-percent" value='15' tabindex='3'>
             <label for="fifteen-percent">15%</label>
-            <input type="radio" name="tip-percentage" id="twentyfive-percent" value='25'>
+            <input type="radio" name="tip-percentage" id="twentyfive-percent" value='25' tabindex='4'>
             <label for="twentyfive-percent">25%</label>
-            <input type="radio" name="tip-percentage" id="fifty-percent" value='50'>
+            <input type="radio" name="tip-percentage" id="fifty-percent" value='50' tabindex='5'>
             <label for="fifty-percent">50%</label>
-            <input type="number" name="tip-percentage-custom" id="custom-percent">
-            <label for="custom-percent">Custom</label>
+            <input type="number" name="tip-percentage-custom" id="custom-percent" placeholder='Custom' tabindex='6'>
+            <label for="custom-percent" style='display: none;'>Custom</label>
           </div>
         </div>
         <div class="people-container">
           <h3>Number Of People</h3>
-          <input type="number" placeholder='0'>
+          <div class="number-input">
+            <label for="number-of-people" style='display: none;'>Number Of People:</label>
+            <input type="number" id="number-of-people" placeholder='0'>
+            <img src="./public/images/icon-person.svg" alt="person icon">
+          </div>
         </div>
       </section>
       <section class="result-section">
