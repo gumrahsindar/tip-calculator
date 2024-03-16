@@ -1,0 +1,70 @@
+@import url("./reset.css");
+
+:root {
+  /* colors */
+  --clr-strong-cyan: hsl(172, 67%, 45%);
+  --clr-dark-cyan: hsl(183, 100%, 15%);
+  --clr-dark-grayish-cyan: hsl(186, 14%, 43%);
+  --clr-grayish-cyan: hsl(184, 14%, 56%);
+  --clr-light-grayish-cyan: hsl(185, 41%, 84%);
+  --clr-very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* font family */
+  --ff-mono: "Space Mono", monospace;
+
+  /* font sizes */
+  --fs-13: 0.8125rem;
+  --fs-16: 1rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-32: 2rem;
+  --fs-48: 3rem;
+
+  /* spacing */
+  --space-6: 0.25rem;
+  --space-16: 1rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-56: 3.5rem;
+  --space-88: 5.5rem;
+}
+
+body {
+  font-family: var(--ff-mono);
+  font-size: var(--fs-24);
+  font-weight: 700;
+  background-color: var(--clr-light-grayish-cyan);
+  margin-inline: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-40);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: var(--fs-16);
+  color: var(--clr-dark-grayish-cyan);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.percentages input[type="radio"] + label {
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-white);
+  padding: var(--space-32);
+  border-radius: 1.5rem;
+  gap: var(--space-32);
+}
