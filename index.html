@@ -42,31 +42,36 @@
           </div>
         </div>
         <div class="people-container">
-          <h3>Number Of People</h3>
+          <div class='people-select'>
+            <h3>Number Of People</h3>
+          <p class='people-number-error'>Can't be zero</p>
+          </div>
           <div class="number-input">
             <label for="number-of-people" style='display: none;'>Number Of People:</label>
-            <input type="number" id="number-of-people" placeholder='0'>
+            <input type="number" id="number-of-people" class='error' placeholder='0'>
             <img src="./public/images/icon-person.svg" alt="person icon">
           </div>
         </div>
       </section>
       <section class="result-section">
         <div class="amount-container">
-          <div class='amount-details'>
-            <div class='amount-tip'>
+          <div>
+            <div class='amount-details'>
+            <div class='amount amount-tip'>
               <div>
                 <h4>Tip Amount</h4>
                 <p>/ person</p>
               </div>
               <p>$4.27</p>
             </div>
-            <div class='amount-total'>
+            <div class='amount amount-total'>
               <div>
                 <h4>Total</h4>
                 <p>/ person</p>
               </div>
               <p>$32.79</p>
             </div>
+          </div>
           </div>
           <button class="reset-btn">Reset</button>
         </div>
