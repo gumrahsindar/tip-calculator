@@ -236,7 +236,7 @@ input[name="tip-percentage-custom"] {
   color: var(--clr-grayish-cyan);
 }
 
-.reset-btn {
+#reset-btn {
   border-radius: 5px;
   padding-block: var(--space-8);
   text-transform: uppercase;
@@ -247,7 +247,7 @@ input[name="tip-percentage-custom"] {
   border: none;
 }
 
-.reset-btn:hover {
+#reset-btn:hover {
   background-color: var(--clr-cyan);
   transition: all 0.3s ease;
 }
