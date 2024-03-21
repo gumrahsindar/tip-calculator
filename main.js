@@ -5,6 +5,7 @@ const totalAmountEl = document.querySelector("#total-amount");
 const tipAmountEl = document.querySelector("#tip-amount");
 const peopleNumberEl = document.querySelector("#number-of-people");
 const errorTextEl = document.querySelector(".people-error-text");
+const resetBtnEl = document.querySelector("#reset-btn");
 
 const updateTotalAmount = () => {
   const billAmount = parseFloat(billInputEl.value);
@@ -64,4 +65,12 @@ customPercentEl.addEventListener("keyup", (event) => {
   if (event.key === "Enter") {
     updateTotalAmount();
   }
+});
+
+resetBtnEl.addEventListener("click", () => {
+  billInputEl.value = "";
+  peopleNumberEl.value = "";
+  customPercentEl.value = "";
+  totalAmountEl.textContent = "$0";
+  tipAmountEl.textContent = "$0";
 });
