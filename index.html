@@ -27,15 +27,15 @@
         <div class="tip-container">
           <h2>Select Tip %</h2>
           <div class="percentages" aria-label='pick a tip percentage'>
-            <input type="radio" name="tip-percentage" id="five-percent" value='5' tabindex='1'>
+            <input type="radio" name="tip-percentage" id="five-percent" value='0.05' tabindex='1'>
             <label for="five-percent">5%</label>
-            <input type="radio" name="tip-percentage" id="ten-percent" value='10' tabindex='2'>
+            <input type="radio" name="tip-percentage" id="ten-percent" value='0.10' tabindex='2'>
             <label for="ten-percent">10%</label>
-            <input type="radio" name="tip-percentage" id="fifteen-percent" value='15' tabindex='3'>
+            <input type="radio" name="tip-percentage" id="fifteen-percent" value='0.15' tabindex='3'>
             <label for="fifteen-percent">15%</label>
-            <input type="radio" name="tip-percentage" id="twentyfive-percent" value='25' tabindex='4'>
+            <input type="radio" name="tip-percentage" id="twentyfive-percent" value='0.25' tabindex='4'>
             <label for="twentyfive-percent">25%</label>
-            <input type="radio" name="tip-percentage" id="fifty-percent" value='50' tabindex='5'>
+            <input type="radio" name="tip-percentage" id="fifty-percent" value='0.50' tabindex='5'>
             <label for="fifty-percent">50%</label>
             <input type="number" name="tip-percentage-custom" id="custom-percent" placeholder='Custom' tabindex='6'>
             <label for="custom-percent" style='display: none;'>Custom</label>
@@ -44,11 +44,11 @@
         <div class="people-container">
           <div class='people-select'>
             <h3>Number Of People</h3>
-          <p class='people-number-error'>Can't be zero</p>
+          <p class='people-error-text'>Can't be zero</p>
           </div>
           <div class="number-input">
             <label for="number-of-people" style='display: none;'>Number Of People:</label>
-            <input type="number" id="number-of-people" class='error' placeholder='0'>
+            <input type="number" id="number-of-people" placeholder='0'>
             <img src="./public/images/icon-person.svg" alt="person icon">
           </div>
         </div>
@@ -62,18 +62,18 @@
                 <h4>Tip Amount</h4>
                 <p>/ person</p>
               </div>
-              <p>$4.27</p>
+              <p id='tip-amount'>$0</p>
             </div>
             <div class='amount amount-total'>
               <div>
                 <h4>Total</h4>
                 <p>/ person</p>
               </div>
-              <p>$32.79</p>
+              <p id='total-amount'>$0</p>
             </div>
           </div>
           </div>
-          <button class="reset-btn">Reset</button>
+          <button id="reset-btn">Reset</button>
         </div>
       </section>
     </main>
